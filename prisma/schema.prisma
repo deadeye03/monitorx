@@ -123,7 +123,7 @@ model WorkSpace {
 model invited_users {
   id                    String    @id @default(auto()) @map("_id") @db.ObjectId
   invited_user_name     String
-  invited_user_email_id String    @unique
+  invited_user_email_id String    
   invited_by            String
   workspaceId           String    @db.ObjectId
   wokspace              WorkSpace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
