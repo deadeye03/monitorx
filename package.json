@@ -2,11 +2,12 @@
   "private": true,
   "scripts": {
     "postinstall": "prisma generate",
+    "prebuild": "npx prisma generate",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prisma.migrate": "npx prisma migrate dev",
-    "prisma.push": "npx prisma db push"
+    "prisma:migrate": "prisma migrate deploy",
+    "prisma:push": "prisma db push"
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",
