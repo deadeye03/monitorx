@@ -32,8 +32,9 @@ function Intro() {
       toast.success('Thankyou For Choosing Monitorx')
     }
     else {
-      toast.error('Something went wrong please try again...')
+      toast.error('Something went wrong please try again...');
     }
+    setOpen(false);
   }
   return (
     <div>
