@@ -3,9 +3,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "npx prisma db push && npx prisma generate && next build",
-    "start": "next start",
-    "prisma:migrate": "prisma migrate deploy",
-    "prisma:push": "prisma db push"
+    "start": "next start"
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",
